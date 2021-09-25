@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Christian König</title>
+    <link>https://chrkoenig.github.io/about/</link>
+    <description>Recent content in Abouts on Christian König</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Sep 2021 14:08:50 +0200</lastBuildDate><atom:link href="https://chrkoenig.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://chrkoenig.github.io/about/about/</link>
+      <pubDate>Sat, 25 Sep 2021 14:08:50 +0200</pubDate>
+      
+      <guid>https://chrkoenig.github.io/about/about/</guid>
+      <description>I&amp;rsquo;m a biodiversity data scientist and ecological modeler who seeks new challenges outside academia. I intend to document this journey here, talking about new projects, old and all kinds of interesting things I learn along the way.</description>
+    </item>
+    
+  </channel>
+</rss>
