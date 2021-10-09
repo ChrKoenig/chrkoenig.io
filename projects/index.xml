@@ -5,15 +5,41 @@
     <link>https://chrkoenig.github.io/projects/</link>
     <description>Recent content in Projects on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 22 Sep 2021 16:41:50 +0200</lastBuildDate><atom:link href="https://chrkoenig.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://chrkoenig.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>projectX</title>
-      <link>https://chrkoenig.github.io/projects/projectx/</link>
-      <pubDate>Wed, 22 Sep 2021 16:41:50 +0200</pubDate>
+      <title>Big Data Ecology</title>
+      <link>https://chrkoenig.github.io/projects/big-data-ecology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/projectx/</guid>
-      <description>Project X</description>
+      <guid>https://chrkoenig.github.io/projects/big-data-ecology/</guid>
+      <description>Blablabla</description>
+    </item>
+    
+    <item>
+      <title>Butterfly detection</title>
+      <link>https://chrkoenig.github.io/projects/butterfly-detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/butterfly-detection/</guid>
+      <description>Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection, i.e. the condition that not every individual of a target taxon is actually observed during a site survey. If not accounted for, imperfect detection may lead to systematic underestimation of key indicators describing the abundance, prevalence and abiotic response of species.</description>
+    </item>
+    
+    <item>
+      <title>GIFT</title>
+      <link>https://chrkoenig.github.io/projects/gift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/gift/</guid>
+      <description>GIFT Database</description>
+    </item>
+    
+    <item>
+      <title>ODMAP</title>
+      <link>https://chrkoenig.github.io/projects/odmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/odmap/</guid>
+      <description>kasjjgfopiasjg</description>
     </item>
     
   </channel>

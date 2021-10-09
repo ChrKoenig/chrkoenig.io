@@ -1,0 +1,45 @@
+---
+title: About
+---
+
+I’m a biodiversity data scientist and ecological modeler who seeks new challenges outside academia. 
+
+During my scientific career, I acquired in-depth knowledge in areas ranging from R programming, statistical modeling, database development to independent problem solving and effective communication. I successfully concluded projects as diverse as  predicting the geographical origin of island species, making conceptual contributions to biodiversity data integration, and developing an interactive shiny web application to improve documentation of ecological models. I am also a passionate learner, which is reflected by the extracurricular courses I took to strengthen my expertise in Python and machine/deep learning.
+
+## Professional experience
+
+**2019-2021 -- Postdoctoral researcher**\
+Bayesian hierarchical modeling | Shiny application development | Predictive ensemble modeling of species invasions | Workshop organization and presentation
+
+**2015-2019 -- Doctoral researcher**\
+Global geospatial analyses | Biodiversity data ETL and database development | Teaching and supervision 
+
+## Education
+
+**2015-2019 -- Doctor of sciences (Dr. rer. nat / PhD),**\
+Macroecology and Biodiversity data science\
+Georg-August University of Göttingen
+
+**2012-2014 -- Master of Science (M.Sc.)**\
+Biodiversity, Ecology and Evolution\
+Georg-August University of Göttingen
+
+**2008-2012 -- Bachelor of Science (B.Sc.)**\
+Environmental monitoring\
+Hochschule für Technik und Wirtschaft Dresden
+
+## Selected publications (peer-reviewed)
+
+**König, Christian**, Rafael O. Wüest, Catherine H. Graham, Dirk Nikolaus Karger, Thomas Sattler, Niklaus E. Zimmermann, and Damaris Zurell. 2021. “Scale Dependency of Joint Species Distribution Models Challenges Interpretation of Biotic Interactions.” Journal of Biogeography 48 (7): 1541–51. https://doi.org/10.1111/jbi.14106.
+
+**König, Christian**, Patrick Weigelt, Amanda Taylor, Anke Stein, Wayne Dawson, Franz Essl, Jan Pergl, et al. 2021. “Source Pools and Disharmony of the World’s Island Floras.” Ecography 44: 44–55. https://doi.org/10.1111/ecog.05174.
+
+Weigelt, Patrick, **Christian König**, and Holger Kreft. 2020. “GIFT – A Global Inventory of Floras and Traits for Macroecology and Biogeography.” Journal of Biogeography 47 (1): 16–43. https://doi.org/10.1111/jbi.13623.
+
+Zurell, Damaris, Janet Franklin, **Christian König**, Phil J. Bouchet, Carsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A Standard Protocol for Reporting Species Distribution Models.” Ecography 43 (January): 1261–77. https://doi.org/10.1111/ecog.04960.
+
+**König, Christian**, Patrick Weigelt, Julian Schrader, Amanda Taylor, Jens Kattge, and Holger Kreft. 2019. “Biodiversity Data Integration - the Significance of Data Resolution and Domain.” PLOS Biology 17 (3): 3000183. https://doi.org/10.1371/journal.pbio.3000183.
+
+Karger, Dirk Nikolaus, Michael Kessler, Olaf Conrad, Patrick Weigelt, Holger Kreft, **Christian König**, and Niklaus E. Zimmermann. 2019. “Why Tree Lines Are Lower on Islands — Climatic and Biogeographic Effects Hold the Answer.” Global Ecology and Biogeography 28 (6): 839–50. https://doi.org/10.1111/geb.12897.
+
+**König, Christian**, Patrick Weigelt, and Holger Kreft. 2017. “Dissecting Global Turnover in Vascular Plants.” Global Ecology and Biogeography 26 (2): 228–42. https://doi.org/10.1111/geb.12536.

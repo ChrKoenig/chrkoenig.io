@@ -1,0 +1,12 @@
+---
+title: "Butterfly detection"
+author: ''
+subtitle: ''
+description: 'Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection [...]'
+type: "project"
+featured_image: "butterfly-detection/thumb.png"
+image: "banner.jpg"
+tags: [Bayes, Hierarchical Model, GLM, Nature Conservation]
+---
+
+Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection, i.e. the condition that not every individual of a target taxon is actually observed during a site survey. If not accounted for, imperfect detection may lead to systematic underestimation of key indicators describing the abundance, prevalence and abiotic response of species.

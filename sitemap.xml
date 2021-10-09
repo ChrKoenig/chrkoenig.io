@@ -3,38 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chrkoenig.github.io/about/about/</loc>
-    <lastmod>2021-09-25T14:08:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.github.io/about/</loc>
-    <lastmod>2021-09-25T14:08:50+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://chrkoenig.github.io/</loc>
-    <lastmod>2021-09-25T14:08:50+02:00</lastmod>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/blog/</loc>
-    <lastmod>2021-09-22T16:41:50+02:00</lastmod>
+    <loc>https://chrkoenig.github.io/tags/extremely-online/</loc>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/blog/my-first-post/</loc>
-    <lastmod>2021-09-22T16:41:50+02:00</lastmod>
+    <loc>https://chrkoenig.github.io/tags/first-post/</loc>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/projects/</loc>
-    <lastmod>2021-09-22T16:41:50+02:00</lastmod>
+    <loc>https://chrkoenig.github.io/post/2021-10-04-hello-world/</loc>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/projects/projectx/</loc>
-    <lastmod>2021-09-22T16:41:50+02:00</lastmod>
+    <loc>https://chrkoenig.github.io/post/</loc>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/</loc>
+    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/top/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/bayes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/big-data-ecology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/biodviersity-modeling/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/butterfly-detection/</loc>
   </url>
   
   <url>
@@ -42,7 +57,55 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/tags/</loc>
+    <loc>https://chrkoenig.github.io/tags/data-bases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/fair-data/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/gift/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/glm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/hierarchical-model/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/top/impressum/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/nature-conservation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/odmap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/teaching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/top/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/version-control/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/workshop/</loc>
   </url>
   
 </urlset>

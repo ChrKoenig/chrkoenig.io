@@ -6,32 +6,79 @@
     <description>Recent content on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Sep 2021 14:08:50 +0200</lastBuildDate><atom:link href="https://chrkoenig.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://chrkoenig.github.io/about/about/</link>
-      <pubDate>Sat, 25 Sep 2021 14:08:50 +0200</pubDate>
-      
-      <guid>https://chrkoenig.github.io/about/about/</guid>
-      <description>I&amp;rsquo;m a biodiversity data scientist and ecological modeler who seeks new challenges outside academia. I intend to document this journey here, talking about new projects, old and all kinds of interesting things I learn along the way.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, world!</title>
-      <link>https://chrkoenig.github.io/blog/my-first-post/</link>
-      <pubDate>Wed, 22 Sep 2021 16:41:50 +0200</pubDate>
+      <link>https://chrkoenig.github.io/post/2021-10-04-hello-world/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/blog/my-first-post/</guid>
-      <description>This is my first blog post!</description>
+      <guid>https://chrkoenig.github.io/post/2021-10-04-hello-world/</guid>
+      <description>Welcome to my personal homepage!
+Going forward, I will write here about my path from being an academic researcher to becoming a data scientist. Expect content on machine learning, statistical programming and data visualization, but also occasional reflections about the state of our world and the beauty of this planet. Come and join my on this journey!
+To learn more about me and my work, head over to the About and Project sections.</description>
     </item>
     
     <item>
-      <title>projectX</title>
-      <link>https://chrkoenig.github.io/projects/projectx/</link>
-      <pubDate>Wed, 22 Sep 2021 16:41:50 +0200</pubDate>
+      <title>About</title>
+      <link>https://chrkoenig.github.io/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/projectx/</guid>
-      <description>Project X</description>
+      <guid>https://chrkoenig.github.io/top/about/</guid>
+      <description>I’m a biodiversity data scientist and ecological modeler who seeks new challenges outside academia.
+During my scientific career, I acquired in-depth knowledge in areas ranging from R programming, statistical modeling, database development to independent problem solving and effective communication. I successfully concluded projects as diverse as predicting the geographical origin of island species, making conceptual contributions to biodiversity data integration, and developing an interactive shiny web application to improve documentation of ecological models.</description>
+    </item>
+    
+    <item>
+      <title>Big Data Ecology</title>
+      <link>https://chrkoenig.github.io/projects/big-data-ecology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/big-data-ecology/</guid>
+      <description>Blablabla</description>
+    </item>
+    
+    <item>
+      <title>Butterfly detection</title>
+      <link>https://chrkoenig.github.io/projects/butterfly-detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/butterfly-detection/</guid>
+      <description>Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection, i.e. the condition that not every individual of a target taxon is actually observed during a site survey. If not accounted for, imperfect detection may lead to systematic underestimation of key indicators describing the abundance, prevalence and abiotic response of species.</description>
+    </item>
+    
+    <item>
+      <title>GIFT</title>
+      <link>https://chrkoenig.github.io/projects/gift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/gift/</guid>
+      <description>GIFT Database</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>https://chrkoenig.github.io/top/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/top/impressum/</guid>
+      <description>Impressum Angaben gem. § 5 TMG:
+Christian König
+Nollendorfstr. 24
+10777 Berlin
+Kontakt:
+Telefon: 015253474680
+E-Mail: chr.koenig@outlook.com
+Haftung für Inhalte
+Alle Inhalte dieses Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</description>
+    </item>
+    
+    <item>
+      <title>ODMAP</title>
+      <link>https://chrkoenig.github.io/projects/odmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/odmap/</guid>
+      <description>kasjjgfopiasjg</description>
     </item>
     
   </channel>

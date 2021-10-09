@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GLM on Christian König</title>
+    <link>https://chrkoenig.github.io/tags/glm/</link>
+    <description>Recent content in GLM on Christian König</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://chrkoenig.github.io/tags/glm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Butterfly detection</title>
+      <link>https://chrkoenig.github.io/projects/butterfly-detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/butterfly-detection/</guid>
+      <description>Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection, i.e. the condition that not every individual of a target taxon is actually observed during a site survey. If not accounted for, imperfect detection may lead to systematic underestimation of key indicators describing the abundance, prevalence and abiotic response of species.</description>
+    </item>
+    
+  </channel>
+</rss>
