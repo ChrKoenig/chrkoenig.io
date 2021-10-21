@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Biodiversity</title>
+      <link>https://chrkoenig.github.io/tags/biodiversity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/biodiversity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Biodviersity Modeling</title>
       <link>https://chrkoenig.github.io/tags/biodviersity-modeling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,11 +53,20 @@
     </item>
     
     <item>
-      <title>Data Bases</title>
-      <link>https://chrkoenig.github.io/tags/data-bases/</link>
+      <title>Biogeography</title>
+      <link>https://chrkoenig.github.io/tags/biogeography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/tags/data-bases/</guid>
+      <guid>https://chrkoenig.github.io/tags/biogeography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data life cycle</title>
+      <link>https://chrkoenig.github.io/tags/data-life-cycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/data-life-cycle/</guid>
       <description></description>
     </item>
     
@@ -62,6 +80,15 @@
     </item>
     
     <item>
+      <title>Generalized dissimilarity modeling</title>
+      <link>https://chrkoenig.github.io/tags/generalized-dissimilarity-modeling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/generalized-dissimilarity-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GLM</title>
       <link>https://chrkoenig.github.io/tags/glm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,20 +98,38 @@
     </item>
     
     <item>
-      <title>Hierarchical Model</title>
-      <link>https://chrkoenig.github.io/tags/hierarchical-model/</link>
+      <title>Hierarchical Modeling</title>
+      <link>https://chrkoenig.github.io/tags/hierarchical-modeling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/tags/hierarchical-model/</guid>
+      <guid>https://chrkoenig.github.io/tags/hierarchical-modeling/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Nature Conservation</title>
-      <link>https://chrkoenig.github.io/tags/nature-conservation/</link>
+      <title>JAGS</title>
+      <link>https://chrkoenig.github.io/tags/jags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/tags/nature-conservation/</guid>
+      <guid>https://chrkoenig.github.io/tags/jags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCMC</title>
+      <link>https://chrkoenig.github.io/tags/mcmc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://chrkoenig.github.io/tags/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/research/</guid>
       <description></description>
     </item>
     
@@ -98,20 +143,11 @@
     </item>
     
     <item>
-      <title>Version Control</title>
-      <link>https://chrkoenig.github.io/tags/version-control/</link>
+      <title>Training</title>
+      <link>https://chrkoenig.github.io/tags/training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/tags/version-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Workshop</title>
-      <link>https://chrkoenig.github.io/tags/workshop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrkoenig.github.io/tags/workshop/</guid>
+      <guid>https://chrkoenig.github.io/tags/training/</guid>
       <description></description>
     </item>
     

@@ -2,11 +2,23 @@
 title: Big Data Ecology
 author: ''
 subtitle: ''
-description: 'Biodiversity science is transitioning in the age of Big Data [...]'
+description: 'Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. [...]'
 type: "project"
 featured_image: "big-data-ecology/thumb.png"
-image: "banner.jpg"
-tags: [Workshop, Teaching, FAIR data, Data Bases, Version Control]
+image: "/img/project_pics/big-data-ecology.jpg"
+showtoc: false
+tags: [FAIR data, Training, Teaching, Data life cycle]
 ---
 
-Blablabla
+## Big Data Ecology
+
+Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. To keep pace with these developments, **biodiversity researchers are increasingly adopting practices and tools from traditionally more technical fields** such as informatics and data science. I developed and held this three-day workshop for the [BioMove](https://www.bio-move.org/) research training group in order to equip their graduate students with the skills necessary to make their work count in the age of big data ecology.
+
+<img src="images/data-life-cycle.jpg" alt="The data life cycle for modern biodiversity research." width="50%"/>
+
+*<center>The [data life cycle](https://www.gfbio.org/training/materials/data-lifecycle) for modern biodiversity research.</center>*
+
+The course introduces **FAIR principles, data federation and the data life cycle** as the core concepts underlying modern ecological research and builds technical competency with thematic lectures on **version control, data bases, spatial data and high performance computing**. The lectures are accompanied by practical sessions, where students can get hands-on experience with the presented topics. As an overarching element, students develop an example research project throughout the course following best-practices.
+
+**All course materials are freely available for re-use and adaptation on my [GitHub](https://github.com/ChrKoenig/Big_Data_Ecology).**
+

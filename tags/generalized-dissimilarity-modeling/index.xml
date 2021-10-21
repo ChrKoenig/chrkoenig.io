@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generalized dissimilarity modeling on Christian König</title>
+    <link>https://chrkoenig.github.io/tags/generalized-dissimilarity-modeling/</link>
+    <description>Recent content in Generalized dissimilarity modeling on Christian König</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://chrkoenig.github.io/tags/generalized-dissimilarity-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Island Biogeography</title>
+      <link>https://chrkoenig.github.io/projects/island-biogeography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/island-biogeography/</guid>
+      <description>Island Biogeography My PhD work focused on the fascinating topic of island biogeography. The reason why biologists love to study islands is their geographic isolation. Emerging as sterile rocks from the ocean floor, islands are populated over long time spans by only those species that manage to cross the open sea. For the few species that succeed, a completely new environment &amp;ndash; typically with fewer competitors or predators &amp;ndash; awaits, leading to spectacular evolutionary shifts.</description>
+    </item>
+    
+  </channel>
+</rss>

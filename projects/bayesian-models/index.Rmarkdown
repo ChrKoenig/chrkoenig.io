@@ -1,0 +1,21 @@
+---
+title: "Bayesian hierarchical models"
+author: ''
+subtitle: ''
+description: ''
+type: "project"
+featured_image: "bayesian-models/thumb.png"
+image: "/img/project_pics/bayesian-models.jpg"
+showtoc: false
+tags: [Bayes, Hierarchical Modeling, GLM, JAGS, MCMC]
+---
+
+Bayesian statistics are a powerful framework to represent uncertainty regarding an event or hypothesis. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has **substantial advantages when estimating complex models** because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to **update existing beliefs in the light of new data**.
+
+I used Bayesian hierarchical models in two recent projects. In the first project, I asked whether interactions among bird species such as competition or predation leave an imprint in their spatial distribution. I applied so-called *joint species distribution models* to address this question. These models look for patterns in the co-distribution of species after accounting for their individual environmental requirements. If two species co-occur more or less often than expected by their environmental preferences, that might indicate positive or negative interactions among those species. The results showed: you can't reliably detect the signature of species interactions in typical survey data, but you might very well in the future with improved data collection and modeling techniques. Read more about this work in this [blog post](https://journalofbiogeographynews.org/2021/07/05/the-elusiveness-of-biotic-interactions-in-spatial-data/). 
+
+<img src="images/model_DAG.jpg" alt="Structure of a Bayesian hierarchical model I used model species observations as the outcome of a joint process describing species occurrence and detection probabilities." width="800px"/>
+
+*<center>Structure of a Bayesian hierarchical model I used model species observations as the outcome of a joint process describing species occurrence and detection probabilities.</center>*
+
+In the second project, I.

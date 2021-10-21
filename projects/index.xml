@@ -7,30 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://chrkoenig.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bayesian hierarchical models</title>
+      <link>https://chrkoenig.github.io/projects/bayesian-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/bayesian-models/</guid>
+      <description>Bayesian statistics are a powerful framework to represent uncertainty regarding an event or hypothesis. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has substantial advantages when estimating complex models because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter.</description>
+    </item>
+    
+    <item>
       <title>Big Data Ecology</title>
       <link>https://chrkoenig.github.io/projects/big-data-ecology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/projects/big-data-ecology/</guid>
-      <description>Blablabla</description>
+      <description>Big Data Ecology Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. To keep pace with these developments, biodiversity researchers are increasingly adopting practices and tools from traditionally more technical fields such as informatics and data science. I developed and held this three-day workshop for the BioMove research training group in order to equip their graduate students with the skills necessary to make their work count in the age of big data ecology.</description>
     </item>
     
     <item>
-      <title>Butterfly detection</title>
-      <link>https://chrkoenig.github.io/projects/butterfly-detection/</link>
+      <title>Biodiversity Databases</title>
+      <link>https://chrkoenig.github.io/projects/biodiversity-databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/butterfly-detection/</guid>
-      <description>Ecological data are often subject to various biases and gaps, which may limit their utility for practical conservation. One of the most common biases in ecological data is imperfect detection, i.e. the condition that not every individual of a target taxon is actually observed during a site survey. If not accounted for, imperfect detection may lead to systematic underestimation of key indicators describing the abundance, prevalence and abiotic response of species.</description>
+      <guid>https://chrkoenig.github.io/projects/biodiversity-databases/</guid>
+      <description>I was involved in the development of multiple biodiversity dabases, most prominently the GIFT database as part of my PhD work.</description>
     </item>
     
     <item>
-      <title>GIFT</title>
-      <link>https://chrkoenig.github.io/projects/gift/</link>
+      <title>Island Biogeography</title>
+      <link>https://chrkoenig.github.io/projects/island-biogeography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/gift/</guid>
-      <description>GIFT Database</description>
+      <guid>https://chrkoenig.github.io/projects/island-biogeography/</guid>
+      <description>Island Biogeography My PhD work focused on the fascinating topic of island biogeography. The reason why biologists love to study islands is their geographic isolation. Emerging as sterile rocks from the ocean floor, islands are populated over long time spans by only those species that manage to cross the open sea. For the few species that succeed, a completely new environment &amp;ndash; typically with fewer competitors or predators &amp;ndash; awaits, leading to spectacular evolutionary shifts.</description>
     </item>
     
     <item>

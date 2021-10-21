@@ -1,0 +1,27 @@
+---
+title: Island Biogeography
+author: ''
+subtitle: ''
+description: 'My PhD work focused on the fascinating topic of island biodiversity. [...]'
+type: project
+featured_image: "island-biogeography/thumb.jpg"
+image: "/img/project_pics/island-biogeography.jpg"
+showtoc: false
+tags: [Research, Biodiversity, Biogeography, Generalized dissimilarity modeling]
+---
+
+## Island Biogeography
+
+My PhD work focused on the fascinating topic of island biogeography. The reason why biologists love to study islands is their geographic isolation. Emerging as sterile rocks from the ocean floor, islands are populated over long time spans by only those species that manage to cross the open sea. For the few species that succeed, a completely new environment -- typically with fewer competitors or predators -- awaits, leading to spectacular evolutionary shifts.
+
+<img src="images/darwin-finches.jpg" alt="Darwin&#39;s finches - an example for the uniqueness of species communities on islands." width="400px"/>
+
+*<center>Darwin's finches - an example for the uniqueness of species communities on islands.</center>*
+
+In my research, I looked closely at what drives changes in the composition of species communities on islands and on the mainland. Specifically, I wanted to know whether different species occur in different places because they cannot get everywhere (dispersal limitation) or because they cannot live everywhere (climatic limitation). I used [generalized dissimilarity models](https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2007.00341.x), an extension generalized linear models, to tease apart the effects of geographical and climatic factors on the similarity of plant communities at a global scale. Interestingly, islands worldwide harbored a much more similar set of species than mainland regions, pointing towards dispersal limitation being the dominating factor that prevents species from colonizing islands. In a follow-up study, I used the same class of models to **predict the geographical source of colonization of an island based on a set of climatic and geographical variables**. Furthermore, I showed how these predictions can serve as a null model to make informative comparisons between island and mainland communities in any dimension, e.g. taxonomic composition, genetic diversity or morphological characteristics.
+
+<img src="images/source_pools.gif" alt="" width="800px"/>
+
+*<center>Predicted mainland source regions for six (out of 178) island floras.</center>*
+
+This work was primarily based on GIFT, a biodiversity database that colleagues and I developed during my PhD studies. To learn more about my involvement in different database projects, see [here](/projects/biodiversity-databases/).
