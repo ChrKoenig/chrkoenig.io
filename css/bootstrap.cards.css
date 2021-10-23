@@ -122,19 +122,9 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
+  margin-top: 0px;
 }
 
-.card-img,
-.card-img-top {
-  border-top-left-radius: calc(0.0rem - 1px);
-  border-top-right-radius: calc(0.0rem - 1px);
-}
-
-.card-img,
-.card-img-bottom {
-  border-bottom-right-radius: calc(0.0rem - 1px);
-  border-bottom-left-radius: calc(0.0rem - 1px);
-}
 
 .card-deck .card {
   margin-bottom: 15px;

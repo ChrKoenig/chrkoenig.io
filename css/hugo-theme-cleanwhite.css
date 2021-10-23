@@ -352,7 +352,7 @@ pre code{
     }
 }
 .intro-header{
-    background:no-repeat center center;	
+    background:no-repeat bottom right;	
     background-color:#a3a3a3;
     background-attachment:scroll;
     -webkit-background-size:cover;
@@ -446,7 +446,7 @@ pre code{
     font-family:Lora,'Times New Roman',serif;
     font-style:italic;
     font-weight:300;
-    font-size:18px
+    font-size:18px;
 }
 .intro-header .post-heading .meta a{
     color:#fff
@@ -822,6 +822,11 @@ body{
 .navbar-default .navbar-toggle .icon-bar+.icon-bar{
     margin-top:3px
 }
+
+.navbar-default .navbar-nav>li>a{
+  color:#fff
+}
+
 .comment{
     margin-top:20px
 }
