@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="Bayesian statistics is a powerful framework to represent uncertainty regarding an event or hypothesis. [...]">
-    <meta property="og:description" content="Bayesian statistics is a powerful framework to represent uncertainty regarding an event or hypothesis. [...]" />
-    <meta property="twitter:description" content="Bayesian statistics is a powerful framework to represent uncertainty regarding an event or hypothesis. [...]" />
+    <meta name="description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]">
+    <meta property="og:description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]" />
+    <meta property="twitter:description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]" />
     
 
     
@@ -44,9 +44,6 @@
     <link rel="stylesheet" href="https://chrkoenig.github.io/css/bootstrap.min.css">
     
     
-    <link rel="stylesheet" href="https://chrkoenig.github.io/css/bootstrap.cards.css">
-
-    
     <link rel="stylesheet" href="https://chrkoenig.github.io/css/hugo-theme-cleanwhite.css"> 
 
     
@@ -57,6 +54,10 @@
 
     
     
+    
+    
+    <link rel="stylesheet" href="https://chrkoenig.github.io/css/bootstrap.cards.css">
+
 
     
     
@@ -157,7 +158,7 @@
     }
 </style>
 
-<header class="intro-header" >
+<header class="intro-header centered-header" >
 
     <div class="container">
         <div class="row">
@@ -207,11 +208,11 @@
                 post-container">
 
                 
-                <p>Bayesian statistics is a powerful framework to represent uncertainty regarding an event or hypothesis. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has <strong>substantial advantages when estimating complex models</strong> because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to <strong>update existing beliefs in the light of new data</strong>.</p>
+                <p>Bayes' theorem provides a powerful way to incorporate uncertainty into statistical modeling. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has <strong>substantial advantages when estimating complex models</strong> because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to <strong>update existing beliefs in the light of new data</strong>.</p>
 <p>I used Bayesian hierarchical models in two recent projects. In the first project, I asked whether interactions among bird species such as competition or predation leave an imprint in their spatial distribution. I applied so-called <em>joint species distribution models</em> to address this question. These models look for patterns in the co-distribution of species after accounting for their individual environmental requirements. If two species co-occur more or less often than expected by their environmental preferences, that might indicate positive or negative interactions among those species. The results showed: you can&rsquo;t reliably detect species interactions in typical survey data, but you might very well in the future with improved data collection and modeling techniques.</p>
 <img src="images/model_DAG.jpg" alt="Structure of a Bayesian hierarchical model I used model species observations as the outcome of a joint process describing species occurrence and detection probabilities." width="800px"/>
-<p><em><center>Structure of a Bayesian hierarchical model I used model the effects of visual features of butterfly species on their detectibility in the field.</center></em></p>
-<p>In the second project, I tested competing hypotheses regarding the effects of visual and behavioral features of butterflies on their detectability in the field. To have full control about the model specification, I used the probabilistic programming language <a href="https://mcmc-jags.sourceforge.io/">JAGS</a> to implement the models and sample the posterior distribution using MCMC. The results indicated strong effects in the hypothesized direction, namely, to put it simply, that big colorful butterflies detected much more reliably than small dull ones.</p>
+<p><em><center>Structure of a Bayesian hierarchical model I used model the effects of visual features of butterfly species on their detectability in the field.</center></em></p>
+<p>In the second project, I tested competing hypotheses regarding the effects of visual and behavioral features of butterflies on their detectability in the field. To have full control about the model specification, I used the probabilistic programming language <a href="https://mcmc-jags.sourceforge.io/">JAGS</a> to implement the models and sample the posterior distribution using MCMC. The results indicated strong effects in the hypothesized direction, namely, put simply, that big colorful butterflies are detected much more reliably than small dull ones.</p>
 <h4 id="further-resources">Further resources</h4>
 <ul>
 <li>

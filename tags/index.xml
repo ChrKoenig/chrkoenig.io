@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>Biodviersity Modeling</title>
-      <link>https://chrkoenig.github.io/tags/biodviersity-modeling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrkoenig.github.io/tags/biodviersity-modeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Biogeography</title>
       <link>https://chrkoenig.github.io/tags/biogeography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,11 +53,38 @@
     </item>
     
     <item>
+      <title>Dashboards</title>
+      <link>https://chrkoenig.github.io/tags/dashboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/dashboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data integration</title>
+      <link>https://chrkoenig.github.io/tags/data-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/data-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data life cycle</title>
       <link>https://chrkoenig.github.io/tags/data-life-cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/tags/data-life-cycle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data standards</title>
+      <link>https://chrkoenig.github.io/tags/data-standards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/data-standards/</guid>
       <description></description>
     </item>
     
@@ -121,6 +139,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-Shiny</title>
+      <link>https://chrkoenig.github.io/tags/r-shiny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/tags/r-shiny/</guid>
       <description></description>
     </item>
     

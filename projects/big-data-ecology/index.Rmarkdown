@@ -1,13 +1,14 @@
 ---
 title: Big Data Ecology
 author: ''
-subtitle: ''
 description: 'Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. [...]'
-type: "project"
+type: project
 featured_image: "big-data-ecology/thumb.png"
 image: "/img/project_pics/big-data-ecology.jpg"
 showtoc: false
+draft: false
 tags: [FAIR data, Training, Teaching, Data life cycle]
+weight: "2"
 ---
 
 ## Big Data Ecology

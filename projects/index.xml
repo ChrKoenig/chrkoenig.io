@@ -7,12 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://chrkoenig.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bayesian Hierarchical Models</title>
-      <link>https://chrkoenig.github.io/projects/bayesian-models/</link>
+      <title>Biodiversity Databases</title>
+      <link>https://chrkoenig.github.io/projects/biodiversity-databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/bayesian-models/</guid>
-      <description>Bayesian statistics is a powerful framework to represent uncertainty regarding an event or hypothesis. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has substantial advantages when estimating complex models because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter.</description>
+      <guid>https://chrkoenig.github.io/projects/biodiversity-databases/</guid>
+      <description>I was involved in the development of multiple biodiversity databases, most prominently the GIFT database as part of my PhD work.
+[Biodiversity data integration paper]
+Further resources Gift website
+Research paper on challenges and opportunities in biodiversity data integration</description>
     </item>
     
     <item>
@@ -25,12 +28,22 @@
     </item>
     
     <item>
-      <title>Biodiversity Databases</title>
-      <link>https://chrkoenig.github.io/projects/biodiversity-databases/</link>
+      <title>Web applications with R-Shiny</title>
+      <link>https://chrkoenig.github.io/projects/r-shiny/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/projects/biodiversity-databases/</guid>
-      <description>I was involved in the development of multiple biodiversity dabases, most prominently the GIFT database as part of my PhD work.</description>
+      <guid>https://chrkoenig.github.io/projects/r-shiny/</guid>
+      <description>The Shiny R-package allows building interactive web application from R.
+Further resources </description>
+    </item>
+    
+    <item>
+      <title>Bayesian Hierarchical Models</title>
+      <link>https://chrkoenig.github.io/projects/bayesian-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.github.io/projects/bayesian-models/</guid>
+      <description>Bayes&#39; theorem provides a powerful way to incorporate uncertainty into statistical modeling. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has substantial advantages when estimating complex models because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter.</description>
     </item>
     
     <item>
@@ -40,15 +53,6 @@
       
       <guid>https://chrkoenig.github.io/projects/island-biogeography/</guid>
       <description>Island Biogeography My PhD work focused on the fascinating topic of island biogeography. The reason why biologists love to study islands is their geographic isolation. Emerging as sterile rocks from the ocean floor, islands are populated over long time spans by only those species that manage to cross the open sea. For the few species that succeed, a completely new environment &amp;ndash; typically with fewer competitors or predators &amp;ndash; awaits, leading to spectacular evolutionary shifts.</description>
-    </item>
-    
-    <item>
-      <title>ODMAP</title>
-      <link>https://chrkoenig.github.io/projects/odmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrkoenig.github.io/projects/odmap/</guid>
-      <description>kasjjgfopiasjg</description>
     </item>
     
   </channel>

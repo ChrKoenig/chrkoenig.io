@@ -1,14 +1,22 @@
 ---
 title: Biodiversity Databases
 author: ''
-subtitle: ''
-description: 'During my PhD work, I was involved '
+description: '[...]'
 type: project
 featured_image: "biodiversity-databases/thumb.png"
 image: "/img/project_pics/databases.jpg"
 showtoc: false
-draft: true
+draft: false
 tags: [""]
+weight: "1"
 ---
 
-I was involved in the development of multiple biodiversity dabases, most prominently the GIFT database as part of my PhD work.
+I was involved in the development of multiple biodiversity databases, most prominently the GIFT database as part of my PhD work. 
+
+[Biodiversity data integration paper]
+
+#### Further resources
+
+[Gift website](https://gift.uni-goettingen.de)
+
+[Research paper](https://doi.org/10.1371/journal.pbio.3000183) on challenges and opportunities in biodiversity data integration

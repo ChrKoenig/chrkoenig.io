@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chrkoenig.github.io/projects/biodiversity-databases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/big-data-ecology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/projects/r-shiny/</loc>
+  </url>
+  
+  <url>
     <loc>https://chrkoenig.github.io/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
@@ -45,19 +57,7 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/projects/big-data-ecology/</loc>
-  </url>
-  
-  <url>
     <loc>https://chrkoenig.github.io/tags/biodiversity/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.github.io/projects/biodiversity-databases/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.github.io/tags/biodviersity-modeling/</loc>
   </url>
   
   <url>
@@ -69,7 +69,19 @@
   </url>
   
   <url>
+    <loc>https://chrkoenig.github.io/tags/dashboards/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/data-integration/</loc>
+  </url>
+  
+  <url>
     <loc>https://chrkoenig.github.io/tags/data-life-cycle/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.github.io/tags/data-standards/</loc>
   </url>
   
   <url>
@@ -105,11 +117,11 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/projects/odmap/</loc>
+    <loc>https://chrkoenig.github.io/projects/</loc>
   </url>
   
   <url>
-    <loc>https://chrkoenig.github.io/projects/</loc>
+    <loc>https://chrkoenig.github.io/tags/r-shiny/</loc>
   </url>
   
   <url>

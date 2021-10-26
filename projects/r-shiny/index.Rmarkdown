@@ -1,0 +1,19 @@
+---
+title: Web applications with R-Shiny
+author: ''
+description: '[...]'
+type: project
+featured_image: "r-shiny/thumb.png"
+image: "/img/project_pics/r-shiny.jpg"
+showtoc: false
+draft: false
+tags: [R-Shiny, Dashboards, Data integration, Data standards]
+weight: "3"
+---
+
+The Shiny R-package allows building interactive web application from R. 
+
+#### Further resources
+
+
+
