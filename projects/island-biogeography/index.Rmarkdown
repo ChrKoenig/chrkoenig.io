@@ -1,13 +1,14 @@
 ---
 title: Island Biogeography
 author: ''
-subtitle: ''
 description: 'My PhD work focused on the fascinating topic of island biodiversity. [...]'
 type: project
 featured_image: "island-biogeography/thumb.jpg"
-image: "/img/project_pics/island-biogeography.jpg"
+image: "/img/project_banners/island-biogeography.jpg"
 showtoc: false
+draft: false
 tags: [Research, Biodiversity, Biogeography, Generalized dissimilarity modeling]
+weight: "1"
 ---
 
 ## Island Biogeography

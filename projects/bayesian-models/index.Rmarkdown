@@ -5,10 +5,12 @@ subtitle: ''
 description: 'Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]'
 type: "project"
 featured_image: "bayesian-models/thumb.png"
-image: "/img/project_pics/bayesian-models.jpg"
+image: "/img/project_banners/bayesian-models.jpg"
 showtoc: false
 tags: [Bayes, Hierarchical Modeling, GLM, JAGS, MCMC]
 ---
+
+## Bayesian Hierarchical Models
 
 Bayes' theorem provides a powerful way to incorporate uncertainty into statistical modeling. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has **substantial advantages when estimating complex models** because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to **update existing beliefs in the light of new data**.
 

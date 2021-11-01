@@ -4,7 +4,7 @@ author: ''
 description: 'Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. [...]'
 type: project
 featured_image: "big-data-ecology/thumb.png"
-image: "/img/project_pics/big-data-ecology.jpg"
+image: "/img/project_banners/big-data-ecology.jpg"
 showtoc: false
 draft: false
 tags: [FAIR data, Training, Teaching, Data life cycle]
@@ -19,7 +19,7 @@ Biodiversity science is transitioning into the age of Big Data, with massively e
 
 *<center>The [data life cycle](https://www.gfbio.org/training/materials/data-lifecycle) for modern biodiversity research.</center>*
 
-The course introduces **FAIR principles, data federation and the data life cycle** as the core concepts underlying modern ecological research and builds technical competency with thematic lectures on **version control, data bases, spatial data and high performance computing**. The lectures are accompanied by practical sessions, where students can get hands-on experience with the presented topics. As an overarching element, students develop an example research project throughout the course following best-practices.
+The course introduces **FAIR principles, data federation and the data life cycle** as the core concepts underlying modern ecological research and builds technical skills with lectures on **version control, data bases, spatial data and high performance computing**. The lectures are accompanied by practical sessions, where students can get hands-on experience with the presented topics. As an overarching element, students develop an example research project throughout the course following best-practices.
 
 #### Further resources
 

@@ -1,17 +1,21 @@
 ---
 title: Web applications with R-Shiny
 author: ''
-description: '[...]'
+description: 'The Shiny R-package allows building interactive web application from R. [...]'
 type: project
 featured_image: "r-shiny/thumb.png"
-image: "/img/project_pics/r-shiny.jpg"
+image: "/img/project_banners/r-shiny.jpg"
 showtoc: false
 draft: false
 tags: [R-Shiny, Dashboards, Data integration, Data standards]
 weight: "3"
 ---
 
+## Web applications with R-Shiny
+
 The Shiny R-package allows building interactive web application from R. 
+
+In an upcoming project, I will also use Shiny to build a file converter where users can upload vegetation data in various file formates, e.g. as `.csv`, `.xslx` or Turboveg database, and convert them into a exchange XML format defined by the [VegX](https://miquelcaceres.github.io/VegX/articles/VegXStandard.html) standard.
 
 #### Further resources
 
