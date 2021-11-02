@@ -12,9 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/projects/r-shiny/</guid>
-      <description>Web applications with R-Shiny The Shiny R-package allows building interactive web application from R.
-In an upcoming project, I will also use Shiny to build a file converter where users can upload vegetation data in various file formates, e.g. as .csv, .xslx or Turboveg database, and convert them into a exchange XML format defined by the VegX standard.
-Further resources </description>
+      <description>Web applications with R-Shiny Shiny allows building interactive web applications from R while having access to all the tools that set the language apart, i.e. advanced data processing, modeling and visualization capabilities and thousands of user-contributed packages.
+During my postdoc, I was part of the ODMAP project to promote better documentation and reporting of biodiversity models. ODMAP stands for Overview, Data, Model, Assessment and Prediction and provides a step-by-step protocol to ensure a reproducible modeling workflow.</description>
     </item>
     
   </channel>

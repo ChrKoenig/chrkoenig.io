@@ -31,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/projects/biodiversity-databases/</guid>
-      <description>Biodiversity Databases I have led and contributed to the development of multiple biodiversity databases. During my PhD, I was one of two main developers behind GIFT, the Global Inventory of Floras and Traits database. GIFT provides information on the geographical distribution and biological characteristics (functional traits) of more than 300.000 plant species worldwide. More than 3.000 geographical regions ranging from small protected areas to entire countries are part of GIFT. GIFT is set up as MySQL database running on an Apache server, with the ETL pipeline being written in R.</description>
+      <description>Biodiversity Databases I have led and contributed to the development of multiple biodiversity databases. During my PhD, I was one of two main developers behind GIFT, the Global Inventory of Floras and Traits database. GIFT provides information on the geographical distribution and biological characteristics (functional traits) of more than 300.000 plant species worldwide. Geographical regions in GIFT, which range from small protected areas to entire countries, are processed using geostatistical methods to extract a variety of additional features, e.</description>
     </item>
     
     <item>
@@ -40,9 +40,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.github.io/projects/r-shiny/</guid>
-      <description>Web applications with R-Shiny The Shiny R-package allows building interactive web application from R.
-In an upcoming project, I will also use Shiny to build a file converter where users can upload vegetation data in various file formates, e.g. as .csv, .xslx or Turboveg database, and convert them into a exchange XML format defined by the VegX standard.
-Further resources </description>
+      <description>Web applications with R-Shiny Shiny allows building interactive web applications from R while having access to all the tools that set the language apart, i.e. advanced data processing, modeling and visualization capabilities and thousands of user-contributed packages.
+During my postdoc, I was part of the ODMAP project to promote better documentation and reporting of biodiversity models. ODMAP stands for Overview, Data, Model, Assessment and Prediction and provides a step-by-step protocol to ensure a reproducible modeling workflow.</description>
     </item>
     
     <item>
@@ -63,7 +62,12 @@ To learn more about me and my work, head over to the About and Project sections.
       
       <guid>https://chrkoenig.github.io/top/about/</guid>
       <description>About me I’m a biodiversity data scientist and ecological modeler who seeks new challenges outside academia.
-During my scientific career, I acquired in-depth knowledge in areas ranging from R programming, statistical modeling, database development to independent problem solving and effective communication. I successfully concluded projects as diverse as predicting the geographical origin of island species, making conceptual contributions to biodiversity data integration, and developing an interactive shiny web application to improve documentation of ecological models.</description>
+Professional experience Since 2021
+Freelance Data Scientist
+Dec 2021 - May 2022 (expected) &amp;ndash; Software Developer @ Karlsruhe Institute of Technology
+Shiny application development | Data Integration
+Apr 2019 - Jul 2021 &amp;ndash; Postdoctoral researcher @ Humboldt University and University of Potsdam
+Bayesian hierarchical modeling | Shiny application development | Predictive ensemble modeling of species invasions | Workshop organization and presentation</description>
     </item>
     
     <item>
