@@ -3,6 +3,7 @@ title: Hello, world!
 date: '2021-11-01'
 tags: [first post, extremely online]
 subtitle: ''
+showtoc: false
 description: 'Welcome to my personal homepage! Going forward, I will write here about my path from being an academic researcher to becoming a data scientist. Expect content on machine learning, statistical programming and data visualization, but also occasional reflections about the state of our world and the beauty of this planet. Come and join my on this journey! [...]'
 image: "/img/post_banners/IMGP8883.JPG"
 ---

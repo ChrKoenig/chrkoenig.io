@@ -8,7 +8,7 @@ image: "/img/project_banners/r-shiny.jpg"
 showtoc: false
 draft: false
 tags: [R-Shiny, Dashboards, Data integration, Data standards]
-weight: "3"
+weight: "1"
 ---
 
 ## Web applications with R-Shiny
