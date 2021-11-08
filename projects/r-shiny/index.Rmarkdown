@@ -21,4 +21,4 @@ During my postdoc, I was part of the ODMAP project to promote better documentati
 
 *<center>Screenshot of the ODMAP web application 1.0</center>*
 
-In an upcoming project, I will use Shiny to build a data conversion tool where users can upload vegetation data in various file formats, e.g. as `.csv`, `.xslx` or Turboveg database, and convert them into a standardized XML format defined by the [VegX](https://miquelcaceres.github.io/VegX/articles/VegXStandard.html) standard.
+In an upcoming project, I will use Shiny to build a data conversion tool where users can upload vegetation data in various file formats, e.g. as .csv, .xslx or Turboveg database, and convert them into a standardized XML format defined by the [VegX](https://miquelcaceres.github.io/VegX/articles/VegXStandard.html) standard.
