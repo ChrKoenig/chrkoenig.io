@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>extremely online on Christian König</title>
-    <link>https://chrkoenig.io/tags/extremely-online/</link>
+    <link>https://chrkoenig.github.io/tags/extremely-online/</link>
     <description>Recent content in extremely online on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/extremely-online/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.github.io/tags/extremely-online/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, world!</title>
-      <link>https://chrkoenig.io/post/2021-10-04-hello-world/</link>
+      <link>https://chrkoenig.github.io/post/2021-10-04-hello-world/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.io/post/2021-10-04-hello-world/</guid>
+      <guid>https://chrkoenig.github.io/post/2021-10-04-hello-world/</guid>
       <description>Welcome to my personal homepage!
 Going forward, I will write here about my path from being an academic researcher to becoming a data scientist. Expect content on machine learning, statistical programming and data visualization, but also occasional reflections about the state of our world and the beauty of this planet. Come and join my on this journey!
 To learn more about me and my work, head over to the About and Project sections.</description>

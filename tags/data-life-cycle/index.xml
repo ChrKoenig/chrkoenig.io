@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data life cycle on Christian König</title>
-    <link>https://chrkoenig.io/tags/data-life-cycle/</link>
+    <link>https://chrkoenig.github.io/tags/data-life-cycle/</link>
     <description>Recent content in Data life cycle on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://chrkoenig.io/tags/data-life-cycle/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://chrkoenig.github.io/tags/data-life-cycle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Data Ecology</title>
-      <link>https://chrkoenig.io/projects/big-data-ecology/</link>
+      <link>https://chrkoenig.github.io/projects/big-data-ecology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.io/projects/big-data-ecology/</guid>
+      <guid>https://chrkoenig.github.io/projects/big-data-ecology/</guid>
       <description>Big Data Ecology Biodiversity science is transitioning into the age of Big Data, with massively expanding digital data collections and infrastructure. To keep pace with these developments, biodiversity researchers are increasingly adopting practices and tools from traditionally more technical fields such as informatics and data science. I developed and held this three-day workshop for the BioMove research training group in order to equip their graduate students with the skills necessary to make their work count in the age of big data ecology.</description>
     </item>
     
