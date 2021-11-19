@@ -2,17 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Christian König</title>
-    <link>https://chrkoenig.github.io/post/</link>
+    <link>https://chrkoenig.io/post/</link>
     <description>Recent content in Posts on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VPS</title>
+      <link>https://chrkoenig.io/post/2021-11-15-vps/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/post/2021-11-15-vps/</guid>
+      <description>Hoster Domain Logging in and SSH LEMP stack I chose docker + Ubuntu 20.04 pre-installed, so can use docker to install packages. What&amp;rsquo;s missing is docker compose:
+sudo curl -L &amp;#34;https://github.com/docker/compose/releases/download/v2.1.1/docker-compose-$(uname -s)-$(uname -m)&amp;#34; -o /usr/local/bin/docker-compose sudo chmod +x /usr/local/bin/docker-compose </description>
+    </item>
+    
+    <item>
+      <title>ProjectionPreview</title>
+      <link>https://chrkoenig.io/post/2021-11-09-projectionpreview/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/post/2021-11-09-projectionpreview/</guid>
+      <description>Bash code to write projections into .csv file.
+proj -l | sed &amp;#34;s/ : /;/g&amp;#34; | tee ./projections.csv </description>
+    </item>
+    
     <item>
       <title>Hello, world!</title>
-      <link>https://chrkoenig.github.io/post/2021-10-04-hello-world/</link>
+      <link>https://chrkoenig.io/post/2021-10-04-hello-world/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.github.io/post/2021-10-04-hello-world/</guid>
+      <guid>https://chrkoenig.io/post/2021-10-04-hello-world/</guid>
       <description>Welcome to my personal homepage!
 Going forward, I will write here about my path from being an academic researcher to becoming a data scientist. Expect content on machine learning, statistical programming and data visualization, but also occasional reflections about the state of our world and the beauty of this planet. Come and join my on this journey!
 To learn more about me and my work, head over to the About and Project sections.</description>

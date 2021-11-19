@@ -1,0 +1,26 @@
+---
+title: VPS
+author: ''
+date: '2021-11-15'
+slug: []
+categories: []
+tags: []
+subtitle: ''
+description: '[...]'
+image:
+  - .na.integer
+draft: yes
+---
+
+# Hoster
+# Domain
+# Logging in and SSH
+# LEMP stack
+I chose docker + Ubuntu 20.04 pre-installed, so can use docker to install packages. What's missing is docker compose:
+
+```{bash, eval = F}
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.1.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+
