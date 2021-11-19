@@ -9,7 +9,7 @@ subtitle: ''
 description: '[...]'
 image:
   - .na.integer
-draft: yes
+draft: true
 ---
 
 Bash code to write projections into `.csv` file.
