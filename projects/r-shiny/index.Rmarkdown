@@ -15,7 +15,7 @@ weight: "1"
 
 [Shiny](https://shiny.rstudio.com/) allows building interactive web applications from R while having access to all the tools that set the language apart, i.e. advanced data processing, modeling and visualization capabilities and thousands of user-contributed packages.
 
-During my postdoc, I was part of the ODMAP project to promote better documentation and reporting of biodiversity models. ODMAP stands for Overview, Data, Model, Assessment and Prediction and provides a step-by-step protocol to ensure a reproducible modeling workflow. To support the adoption of the approach in the scientific community, I developed a [Shiny web application](https://github.com/ChrKoenig/ODMAP) where users can create, edit and and export an ODMAP protocol of their own study. The app interfaces with other relevant packages to assist user input, which has [contributed considerably to](https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.05700) ODMAP's great scientific impact.
+During my postdoc, I was part of the ODMAP project to promote better documentation and reporting of biodiversity models. ODMAP stands for Overview, Data, Model, Assessment and Prediction and provides a step-by-step protocol to ensure a reproducible modeling workflow. To support the adoption of the approach in the scientific community, I developed a [Shiny web application](https://github.com/ChrKoenig/ODMAP) where users can create, edit and and export an ODMAP protocol of their own study. The app interfaces with other relevant packages to assist user input and has [contributed considerably to](https://onlinelibrary.wiley.com/doi/10.1111/ecog.05700) ODMAP's great scientific impact.
 
 <img src="images/screenshot.png" alt="" width="100%"/>
 

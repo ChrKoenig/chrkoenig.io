@@ -49,7 +49,7 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.io/top/about/</loc>
+    <loc>https://chrkoenig.io/about/</loc>
   </url>
   
   <url>
@@ -113,6 +113,10 @@
   </url>
   
   <url>
+    <loc>https://chrkoenig.io/impressum/</loc>
+  </url>
+  
+  <url>
     <loc>https://chrkoenig.io/tags/jags/</loc>
   </url>
   
@@ -138,10 +142,6 @@
   
   <url>
     <loc>https://chrkoenig.io/tags/teaching/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.io/top/</loc>
   </url>
   
   <url>

@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]">
-    <meta property="og:description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]" />
-    <meta property="twitter:description" content="Bayes a powerful way to incorporate uncertainty into statistical modeling. [...]" />
+    <meta name="description" content="Bayes&#39; theorem provides a powerful way to incorporate uncertainty into statistical modeling.[...]">
+    <meta property="og:description" content="Bayes&#39; theorem provides a powerful way to incorporate uncertainty into statistical modeling.[...]" />
+    <meta property="twitter:description" content="Bayes&#39; theorem provides a powerful way to incorporate uncertainty into statistical modeling.[...]" />
     
 
     
@@ -42,7 +42,7 @@
 
     
     <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.min.css">
-    
+      
     
     <link rel="stylesheet" href="https://chrkoenig.io/css/hugo-theme-cleanwhite.css"> 
 
@@ -60,6 +60,9 @@
     
     
     <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.cards.css">
+    
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.textstyles.css">
 
     
     
@@ -107,7 +110,7 @@
                     
                     
 		    
-                        <li><a href="https://chrkoenig.io/top/about/">ABOUT</a></li>
+                        <li><a href="https://chrkoenig.io/about/">ABOUT</a></li>
                     
                         <li><a href="https://chrkoenig.io/projects/">PROJECTS</a></li>
                     
@@ -153,68 +156,70 @@
 
 
 <style type="text/css">
-    header.intro-header {
-        background-image: url('/img/project_banners/bayesian-models.jpg')
-    }
+  header.intro-header {
+  background-image: url('/img/project_banners/bayesian-models.jpg')
+  }
 </style>
 
 <header class="intro-header centered-header" >
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 post-container">
-            <div class="post-heading">
-		<div class="tags">
-		    
-		    <a class="tag" href="https://chrkoenig.io/tags/bayes" title="Bayes">
-			Bayes
-		    </a>
-		    
-		    <a class="tag" href="https://chrkoenig.io/tags/hierarchical-modeling" title="Hierarchical Modeling">
-			Hierarchical Modeling
-		    </a>
-		    
-		    <a class="tag" href="https://chrkoenig.io/tags/glm" title="GLM">
-			GLM
-		    </a>
-		    
-		    <a class="tag" href="https://chrkoenig.io/tags/jags" title="JAGS">
-			JAGS
-		    </a>
-		    
-		    <a class="tag" href="https://chrkoenig.io/tags/mcmc" title="MCMC">
-			MCMC
-		    </a>
-		    
-		</div>
-		<h1>Bayesian Hierarchical Models</h1>
-            </div>
-            </div>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 post-container">
+      <div class="post-heading">
+        <div class="tags">
+          
+          <a class="tag" href="https://chrkoenig.io/tags/bayes" title="Bayes">
+          Bayes
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/hierarchical-modeling" title="Hierarchical Modeling">
+          Hierarchical Modeling
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/glm" title="GLM">
+          GLM
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/jags" title="JAGS">
+          JAGS
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/mcmc" title="MCMC">
+          MCMC
+          </a>
+          
         </div>
+        
+          <div>
+            
+            <h1>Bayesian Hierarchical Models</h1>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 
 
 
 
 <article>
-    <div class="container">
-        <div class="row">
-
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                
-                <h2 id="bayesian-hierarchical-models">Bayesian Hierarchical Models</h2>
-<p>Bayes' theorem provides a powerful way to incorporate uncertainty into statistical modeling. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has <strong>substantial advantages when estimating complex models</strong> because the uncertainty surrounding model parameters can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to <strong>update existing beliefs in the light of new data</strong>.</p>
+  <div class="container">
+    <div class="row">
+      
+      <div class="
+        col-lg-8 col-lg-offset-2
+        col-md-10 col-md-offset-1
+        post-container">
+        
+        <h2 id="bayesian-hierarchical-models">Bayesian Hierarchical Models</h2>
+<p>Bayes' theorem provides a powerful way to incorporate uncertainty into statistical modeling. Two key differences set the Bayesian approach apart from classical frequentist statistics. First, the parameters of a model are treated as random instead of fixed variables, i.e. they are drawn from a probability distribution. This has <strong>substantial advantages when estimating complex models</strong> because the uncertainty in parameter estimates can be propagated throughout the model. Second, Bayesian approaches take into account prior information about the distribution of a parameter. Thus, Bayesian inference is an elegant and mathematically rigorous way to <strong>update existing beliefs in the light of new data</strong>.</p>
 <p>I used Bayesian hierarchical models in two recent projects. In the first project, I asked whether interactions among bird species such as competition or predation leave an imprint in their spatial distribution. I applied so-called <em>joint species distribution models</em> to address this question. These models look for patterns in the co-distribution of species after accounting for their individual environmental requirements. If two species co-occur more or less often than expected by their environmental preferences, that might indicate positive or negative interactions among those species. The results showed: you can&rsquo;t reliably detect species interactions in typical survey data, but you might very well in the future with improved data collection and modeling techniques.</p>
 <img src="images/model_DAG.jpg" alt="Structure of a Bayesian hierarchical model I used model species observations as the outcome of a joint process describing species occurrence and detection probabilities." width="800px"/>
 <p><em><center>Structure of a Bayesian hierarchical model I used model the effects of visual features of butterfly species on their detectability in the field.</center></em></p>
 <p>In the second project, I tested competing hypotheses regarding the effects of visual and behavioral features of butterflies on their detectability in the field. To have full control about the model specification, I used the probabilistic programming language <a href="https://mcmc-jags.sourceforge.io/" target="_blank" rel="noopener">JAGS</a>
- to implement the models and sample the posterior distribution using MCMC. The results indicated strong effects in the hypothesized direction, namely, put simply, that big colorful butterflies are detected much more reliably than small dull ones.</p>
+ to implement the models and sample the posterior distribution using MCMC. The results indicated strong effects in the hypothesized direction that, put simply, big colorful butterflies are detected much more reliably than small dull ones.</p>
 <h4 id="further-resources">Further resources</h4>
 <ul>
 <li>
@@ -229,19 +234,14 @@
 </li>
 </ul>
 
-
-                
-
-                <hr>
-
-            </div>
-
-            
-            
-        </div>
+        
+        <hr>
+      </div>
+      
+      
     </div>
+  </div>
 </article>
-
 
 
 
@@ -319,7 +319,7 @@
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> 
                     Hugo Theme
                     <br>
-                    <a href="https://chrkoenig.io/top/impressum/">Impressum</a>
+                    <a href="https://chrkoenig.io/impressum/">Impressum</a>
                     </iframe>
                 </p>
             </div>
