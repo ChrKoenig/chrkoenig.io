@@ -373,6 +373,10 @@ pre code{
 }
 
 .intro-header.centered-header{
+     background-position: center center; 
+}
+
+.intro-header.bottom-centered-header{
      background-position: bottom center; 
 }
 
