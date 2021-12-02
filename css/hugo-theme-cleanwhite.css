@@ -15,25 +15,25 @@
     }
 }
 .sidebar-container{
-    color:#aaa;
+    color:#777;
     font-size:18px
 }
 .sidebar-container h5{
-    color:gray;
+    color:#222;
     padding-bottom:1em
 }
 .sidebar-container h5 a{
-    color:gray!important;
+    color:#222 !important;
     text-decoration:none
 }
 .sidebar-container a{
-    color:#aaa!important
+    color:#777 !important
 }
 .sidebar-container a:hover,.sidebar-container a:active{
     color:#0085a1!important
 }
 .sidebar-container .tags a{
-    border-color:#aaa;
+    border-color:#777;
     background-color:#fff!important
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1top{
-  color:green
+  color:black
 }
 h2,h3,h4,h5,h6{
     color:#222;
@@ -373,7 +373,7 @@ pre code{
 }
 
 .intro-header.centered-header{
-     background-position: center center; 
+     background-position: bottom center; 
 }
 
 .intro-header.style-text{	
@@ -499,7 +499,7 @@ pre code{
 }
 .post-preview>.post-meta>a, .post-preview>.post-meta{
     font-family:"Zen Kaku Gothic Antique","Helvetica Neue",Arial,sans-serif;
-    color:gray;
+    color:rgb(42,104,49);
     font-size:18px;
     font-style:italic;
     font-weight:500;
@@ -526,7 +526,7 @@ pre code{
 .post-content-preview{
     font-size:16px;
     font-style:italic;
-    color:#a3a3a3
+    color:#666
 }
 .post-content-preview:hover{
     color:#0085a1
