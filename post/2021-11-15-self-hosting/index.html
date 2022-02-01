@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    
+    <meta property="og:site_name" content="Christian König">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://chrkoenig.io//img/site_banner.png">
+    <meta property="twitter:image" content="https://chrkoenig.io//img/site_banner.png" />
+    
+
+    
+    <meta name="title" content="That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)" />
+    <meta property="og:title" content="That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)" />
+    <meta property="twitter:title" content="That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)" />
+    
+
+    
+    <meta name="description" content="For a few months now, the first post &#34;Hello, world!&#34; has been sitting lonely on the front page of this blog. Why? Well, [...]">
+    <meta property="og:description" content="For a few months now, the first post &#34;Hello, world!&#34; has been sitting lonely on the front page of this blog. Why? Well, [...]" />
+    <meta property="twitter:description" content="For a few months now, the first post &#34;Hello, world!&#34; has been sitting lonely on the front page of this blog. Why? Well, [...]" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="R, Python, Dataviz, Machine learning, Statistical modeling">
+    <link rel="shortcut icon" href="https://chrkoenig.io/img/favicon.ico">
+
+    <title>That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)-Data thoughts</title>
+
+    <link rel="canonical" href="https://chrkoenig.io/post/2021-11-15-self-hosting/">
+
+    <link rel="stylesheet" href="https://chrkoenig.io/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.min.css">
+      
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/hugo-theme-cleanwhite.css"> 
+
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.cards.css">
+    
+    
+    <link rel="stylesheet" href="https://chrkoenig.io/css/bootstrap.textstyles.css">
+
+    
+    
+    <script src="https://chrkoenig.io/js/jquery.min.js"></script>
+
+    
+    <script src="https://chrkoenig.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://chrkoenig.io/js/hux-blog.min.js"></script>
+
+    
+    
+    
+    
+    
+<script>
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.chrkoenig.io/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://chrkoenig.io/">CHRISTIAN KÖNIG</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://chrkoenig.io/">Blog</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="https://chrkoenig.io/about/">ABOUT ME</a></li>
+                    
+                        <li><a href="https://chrkoenig.io/projects/">PROJECTS</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+  header.intro-header {
+  background-image: url('/img/post_banners/IMGP4384.JPG')
+  }
+</style>
+
+<header class="intro-header bottom-centered-header" >
+
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+      <div class="post-heading">
+        <div class="tags">
+          
+          <a class="tag" href="https://chrkoenig.io/tags/hugo" title="Hugo">
+          Hugo
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/blogdown" title="Blogdown">
+          Blogdown
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/self-hosting" title="Self-hosting">
+          Self-hosting
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/docker" title="Docker">
+          Docker
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/nextcloud" title="NextCloud">
+          NextCloud
+          </a>
+          
+          <a class="tag" href="https://chrkoenig.io/tags/sysadmin" title="SysAdmin">
+          SysAdmin
+          </a>
+          
+        </div>
+        
+        <div class="text-black">
+          
+            <h1>That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              
+              Posted on 
+              Tuesday, February 1, 2022
+              
+              
+              
+                  
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<article>
+  <div class="container">
+    <div class="row">
+      
+      <div class="
+        col-lg-6 col-lg-offset-2
+        col-md-8 col-md-offset-2
+        post-container">
+        
+        <p><strong>This is part one of a three-part blog series. The other posts will be linked here in the future.</strong></p>
+<ol>
+<li>Building a static website with Hugo</li>
+<li>Going live: domains and options for web hosting</li>
+<li>Dockerizing your website and other services on a virtual private server</li>
+</ol>
+<hr>
+<h1 id="why-a-website">Why a website?</h1>
+<p>For a few months now, the first post <a href="https://chrkoenig.io/post/2021-10-04-hello-world/">&ldquo;Hello, world!&quot;</a>
+ has been sitting lonely on the front page of this blog. Why? Well, I&rsquo;m back in a full-time job and have less time to dedicate to private projects. There are also some major changes in personal life coming up that demand attention. However, the main reason for the lack of content is that my initial plan, setting up a small web presence, has spiraled somewhat out of control. In this series of posts, I want to document this journey from hosting a simple template website on github pages to running a multi-container docker environment on a virtual private server.</p>
+<img src="images/plan-reality.jpg" alt="" width="80%"/>
+<center><i>My process of setting up a website (symbolic picture)</i></center>
+<p>The motivation for building a personal website came from a professional re-orientation. After completing my postdoc position as an ecological modeler last year, I started looking for jobs outside academic research and quickly realized that things in industry work differently. A competitive list of macroecological publications does not get you very far when applying as a data scientist/analyst, and your twitter account is not the canonical way to advertise your work. To get interviewed, I needed a place to showcase my skills and experience. A personal website with a small blog and a project portfolio would be ideal for that purpose.</p>
+<p>I&rsquo;m not going to talk about every technical detail that needed to be solved in the process, but rather paint the broad picture of the technologies I used, the service providers I chose and the lessons I learned. So if you&rsquo;re a professional web developer, this may not be the most exciting read for you. However, if you always wanted to level up your online presence but never knew where to start, you&rsquo;re welcome to read on.</p>
+<h1 id="hugo---the-worlds-fastest-static-site-generator">Hugo - the world&rsquo;s fastest static site generator</h1>
+<p>Static site generators (SSGs) are used to build html files from a set of styling templates and content files. They&rsquo;re called static because the pages, once created and deployed to the server, are delivered to the browser without modification. This is in contrast to dynamic websites, where pages are built and modified server-side in response to user inputs. While today most complex websites rely on server-side data storage and processing, there are many good reasons to build smaller projects like a personal website in a static framework. Quicker response times, better maintainability and fewer security concerns are just some of them.</p>
+<p>For my personal website, I chose the <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
+ static site generator. The reasons for choosing Hugo over other frameworks were:</p>
+<ul>
+<li><strong>Speed:</strong> Website building in Hugo is breezingly fast, which allows you to quickly explore different design decisions without interrupting your development flow.</li>
+<li><strong>Flexibility:</strong> Hugo offers a large variety of <a href="https://themes.gohugo.io/" target="_blank" rel="noopener">themes</a>
+ that help you create a beautiful website in no time. On the other hand, Hugo has powerful features to modify existing themes or build unique websites entirely from scratch.</li>
+<li><strong>Integration with RStudio:</strong> Hugo integrates very well with R and RStudio via the <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a>
+ R-package. This unlocks a number of really great features such as R Markdown support or instant page previews in the IDE.</li>
+</ul>
+<h1 id="hugo-project-structure">Hugo project structure</h1>
+<p>A typical Hugo project consists of a <strong>config file</strong> and a number of <strong>directories</strong> with specific contents.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
+├── archetypes
+│   ├── post.md
+│   └── project.md
+├── config.toml
+├── content
+│   ├── about
+│   ├── datenschutzerklärung
+│   ├── impressum
+│   ├── post
+│   └── projects
+├── layouts
+│   ├── _default
+│   ├── partials
+│   ├── project
+│   ├── shortcodes
+│   └── top
+├── public
+├── resources
+│   └── _gen
+├── static
+│   ├── css
+│   ├── img
+│   └── js
+├── themes
+│   └── hugo-theme-cleanwhite
+└── website_blogdown.Rproj
+</code></pre></div><p><em><center>Structure of the Hugo project for this website.</center></em></p>
+<p>The <strong>config file</strong> stores general settings about your website, e.g. your name, the URL of your site, markup configurations or build options. If you are using a theme, additional theme-specific settings may be available. For example, the theme I&rsquo;m using (Zhao Huabing&rsquo;s <a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite" target="_blank" rel="noopener">CleanWhite</a>
+ theme) has custom parameters for social media profiles that will conveniently add the corresponding icon and link to the site. A single config file specified in YAML, TOML or JSON format should be sufficient for a typical website, but you can organize multiple configs for different environments in a dedicated <code>config/</code> directory if necessary. This feature is useful when your website has several localized versions or your are using different staging and production environments.</p>
+<p>While on the subject of <strong>directories</strong>: each directory in a Hugo project has a specific purpose. Let&rsquo;s quickly go over the most important ones. The <code>content/</code> directory is where you store the markdown files for all the pages of your website. This is where your blog posts, portfolio pages and about sections live. Note that the structure of <code>content/</code> is important: Hugo will (1) consider each top-level folder a separate content type and (2) model the website hierarchy after the folder structure in this directory. That means, if you have a top-level folder <code>projects/</code> with two sub folders <code>professional/</code> and <code>fun/</code>, the corresponding content pages will be created under <code>mydomain.io/projects/professional</code> and <code>mydomain.io/projects/fun</code>, respectively.</p>
+<p>Under <code>archetypes/</code> you can specify different front matter for different content types. You can think of front matter as a config for a specific piece of markdown content (again specified in YAML, TOML or JSON format), only that it is not a separate file but included as a header in the markdown file. In the <code>layout/</code> directory, you can write html templates to control how content is displayed. By default, there is a template for single pages and one for list pages but you can write custom layouts for different parts of your website, including content types or repeating elements such as header or footer. The <code>static/</code> directory contains files that are served without modification by a template. Images, JavaScript files, and CSS style sheets belong here.</p>
+<p>Finally, there is the <code>themes/</code> directory. This one is a bit special, as the themes you put there come with their own archetypes, layouts and static files, essentially mirroring the structure of your own projects. This is by design. Hugo has a specific <a href="https://gohugo.io/templates/lookup-order/" target="_blank" rel="noopener">lookup order</a>
+ when assembling the templates to build your site, and it will generally give the files in your project directory precedence over those in a theme folder. That means you can set up a nicely styled website within minutes but have the ability to customize every piece of HTML, CSS, JavaScript by simply placing a modified version of the template file in the corresponding part of you project directory. Great!</p>
+<h1 id="hugo-functions-and-variables">Hugo Functions and variables</h1>
+<p>Now we&rsquo;ve seen how Hugo and its project structure are designed to make theming and templating easy, but one essential part is still missing. After all, templates need to be filled with useful information somehow. This is where Hugo <a href="https://gohugo.io/templates/introduction/" target="_blank" rel="noopener"><strong>variables and functions</strong></a>
+ come into play. Hugo gives you access to both user-defined and built-in variables that are context aware, i.e. apply to the entire site, to a specific page or to other parts of the project (e.g. git, files, taxonomy etc.). Combine those with the multitude of functions for control flow, data manipulation and so on, wrap it in double curly brackets and you have a very powerful framework for building dynamic templates for static web content. In fact, this framework is not original to Hugo but a package in the Go standard library known as <a href="https://pkg.go.dev/text/template" target="_blank" rel="noopener">Go templates</a>
+. Below it is in action. I use the Hugo <code>range</code> function in combination with some filtering and sorting to build bootstrap cards from the front matter of my project pages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card-columns position-relative&#34;</span>&gt;                          <span style="color:#6272a4">&lt;!-- New div with custom bootstrap class (not included in theme)
+</span><span style="color:#6272a4">   {{range where $.Site.RegularPages.ByWeight &#34;Section&#34; &#34;projects&#34; }} &lt;!-- use range function to loop over regular pages where section equals projects --&gt;</span>
+   &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card&#34;</span>&gt;
+      &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card-img-top&#34;</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">{{</span> .<span style="color:#50fa7b">featured_image</span>}}&gt;            <span style="color:#6272a4">&lt;!-- grab link to preview image --&gt;</span>
+      &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card-body&#34;</span>&gt;
+         &lt;<span style="color:#ff79c6">center</span>&gt;
+            &lt;<span style="color:#ff79c6">h3</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card-title&#34;</span>&gt;
+            {{ .Title }}&lt;/<span style="color:#ff79c6">h5</span>&gt;                                         <span style="color:#6272a4">&lt;!-- title --&gt;</span>
+            &lt;<span style="color:#ff79c6">p</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;card-text&#34;</span>&gt;{{ .Description}}&lt;/<span style="color:#ff79c6">p</span>&gt;                <span style="color:#6272a4">&lt;!-- description --&gt;</span>
+            &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">{{</span> .<span style="color:#50fa7b">RelPermalink</span> }} <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stretched-link&#34;</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;  <span style="color:#6272a4">&lt;!-- link --&gt;</span>
+         &lt;/<span style="color:#ff79c6">center</span>&gt;
+      &lt;/<span style="color:#ff79c6">div</span>&gt;
+   &lt;/<span style="color:#ff79c6">div</span>&gt;
+   {{ end }}                                                          <span style="color:#6272a4">&lt;!-- end range--&gt;</span>
+&lt;/<span style="color:#ff79c6">div</span>&gt;
+</code></pre></div><p><em><center>Templating in Hugo is really straightforward</center></em></p>
+<p>Here&rsquo;s a (non-exhaustive) list of additional changes I made in order to personalize the website:</p>
+<ul>
+<li>Made new header images from pictures I took around the world</li>
+<li>Created a new content type for projects and adjusted templates for single pages (no sidebar, different header) and list pages (display projects as Bootstrap cards)</li>
+<li>Trimmed down the sidebar, changed the colors of tags</li>
+<li>Made the content column narrower and increased the font size</li>
+<li>Removed dynamic behavior of the Navbar, where new tabs would be added for common tags</li>
+<li>Imported a custom font from Google Fonts (Zen Kaku Gothic Antique)</li>
+</ul>
+<h1 id="r-markdown-for-easy-content-creation">(R-)Markdown for easy content creation</h1>
+<p>The most important part of every website is, of course, its content. Content files in Hugo are written in markdown, which is a game changer when it comes to effective text production while having full control over text formatting. The core idea behind markdown is to use a small set of simple markups, i.e. in-text formatting instructions, to convert human-readable source text into html. No painful point-and-click styling of text snippets, no hours spent on stack overflow to layout a figure (I&rsquo;m looking at you, LaTeX!), and no distractive indentations and tags around the actual text content. Markdown just works. If you&rsquo;ve ever used github, wrote a documentation or prepared an automated report, chances are you&rsquo;ve come across markdown already. For those who haven&rsquo;t, here is a short <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank" rel="noopener">cheat sheet</a>
+ of the basics.</p>
+<p>Hugo uses a fairly standard <em>flavor</em> of markdown, which is fine in many use cases. However, having enjoyed the features of the R-markdown ecosystem for years, I was very happy to learn that the <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a>
+ R-package brings R-markdown to Hugo. <strong>That allows for the execution code blocks &ndash; not just R but also Python, SQL, bash and more &ndash; directly in the markdown file.</strong> Other advanced features such as mathematical notation or embedded html widgets are exclusive to R-markdown as well. Overall, blogdown integrates very well with RStudio and really helps with the creation of content. Besides the benefits of R-markdown, the package also provides a number of utility functions to create new files, insert content, or preview and build the website.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p><strong>With a basic understanding of the above concepts - Hugo project structure, templating and markdown - it was straightforward to build a modern, personalized website</strong>. Time to share it with with the world. This will be the topic of the next post in this series. I&rsquo;ll talk about different options to deploy a website and the reasons why I eventually decided to venture into self-hosting instead of using a free option such as GitHub pages or Netlify.</p>
+<h1 id="further-readings">Further readings</h1>
+<ul>
+<li><a href="https://gohugo.io/documentation/" target="_blank" rel="noopener">Official Hugo Documentation</a>
+ including a series of very accessible Youtube tutorials</li>
+<li><a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">E-Book about the blogdown R-package</a>
+</li>
+<li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS tutorial</a>
+ for effective styling and theming</li>
+</ul>
+
+        
+        <hr>
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="https://chrkoenig.io/post/2021-10-04-hello-world/" data-toggle="tooltip" data-placement="top" title="Hello, world!">&larr;
+            Previous Post</a>
+          </li>
+          
+          
+        </ul>
+        
+<div id="disqus-comment"></div>
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "chrkoenig-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+      </div>
+      
+      
+      <div class="
+        col-lg-2 col-lg-offset-0
+        visible-lg-block
+        sidebar-container
+        catalog-container">
+        <div class="side-catalog">
+          <hr class="hidden-sm hidden-xs">
+          <h5>
+            <a class="catalog-toggle" href="#">CATALOG</a>
+          </h5>
+          <ul class="catalog-body"></ul>
+        </div>
+      </div>
+      
+      
+      <div class="
+        col-lg-6 col-lg-offset-2
+        col-md-8 col-md-offset-2
+        sidebar-container">
+        
+        
+        <section>
+          <hr class="hidden-sm hidden-xs">
+          <h5><a href="https://chrkoenig.io/tags/">FEATURED TAGS</a></h5>
+          <div class="tags">
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://chrkoenig.io/tags/biogeography" title="biogeography">
+            biogeography
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://chrkoenig.io/tags/data-integration" title="data-integration">
+            data-integration
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+        </section>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:chr.koenig@outlook.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/Chr_Koenig">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ChrKoenig">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/christian-k%C3%B6nig-8a074a20a/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Christian König 2022
+                    <br>
+                    Powered by
+                    <a href="https://github.com/rstudio/blogdown">R Blogdown</a> 
+                    and the
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> 
+                    Hugo Theme
+                    <br>
+                    <a href="https://chrkoenig.io/impressum/">Impressum</a> 
+                     | 
+                    <a href="https://chrkoenig.io/datenschutzerklärung/">Datenschutzerklärung</a> 
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

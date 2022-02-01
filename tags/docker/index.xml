@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Christian König</title>
+    <link>https://chrkoenig.io/tags/docker/</link>
+    <description>Recent content in Docker on Christian König</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)</title>
+      <link>https://chrkoenig.io/post/2021-11-15-self-hosting/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/post/2021-11-15-self-hosting/</guid>
+      <description>This is part one of a three-part blog series. The other posts will be linked here in the future.
+ Building a static website with Hugo Going live: domains and options for web hosting Dockerizing your website and other services on a virtual private server   Why a website? For a few months now, the first post &amp;ldquo;Hello, world!&amp;quot; has been sitting lonely on the front page of this blog.</description>
+    </item>
+    
+  </channel>
+</rss>
