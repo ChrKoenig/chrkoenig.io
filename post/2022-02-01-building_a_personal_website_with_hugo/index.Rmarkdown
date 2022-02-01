@@ -1,0 +1,128 @@
+---
+title: "That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)"
+author: ''
+date: '2022-02-01'
+categories: []
+tags: [Hugo, Blogdown, Self-hosting, Docker, NextCloud, SysAdmin]
+description: 'For a few months now, the first post "Hello, world!" has been sitting lonely on the front page of this blog. Why? Well, [...]'
+image: "/img/post_banners/IMGP0935.JPG"
+draft: false
+headerstyle: text-black
+---
+
+**This is part one of a three-part blog series. The other posts will be linked here in the future.** 
+1. Building a static website with Hugo
+2. Going live: domains and options for web hosting
+3. Dockerizing your website and other services on a virtual private server
+
+---
+# Why a website?
+For a few months now, the first post ["Hello, world!"](/post/2021-10-04-hello-world/) has been sitting lonely on the front page of this blog. Why? Well, I'm back in a full-time job and have less time to dedicate to private projects. There are also some major changes in personal life coming up that demand attention. However, the main reason for the lack of content is that my initial plan, setting up a small web presence, has spiraled somewhat out of control. In this series of posts, I want to document this journey from hosting a simple template website on github pages to running a multi-container docker environment on a virtual private server. 
+
+<img src="images/plan-reality.jpg" alt="" width="80%"/>
+<center><i>My process of setting up a website (symbolic picture)</i></center>
+
+The motivation for building a personal website came from a professional re-orientation. After completing my postdoc position as an ecological modeler last year, I started looking for jobs outside academic research and quickly realized that things in industry work differently. A competitive list of macroecological publications does not get you very far when applying as a data scientist/analyst, and your twitter account is not the canonical way to advertise your work. To get interviewed, I needed a place to showcase my skills and experience. A personal website with a small blog and a project portfolio would be ideal for that purpose.
+
+I'm not going to talk about every technical detail that needed to be solved in the process, but rather paint the broad picture of the technologies I used, the service providers I chose and the lessons I learned. So if you're a professional web developer, this may not be the most exciting read for you. However, if you always wanted to level up your online presence but never knew where to start, you're welcome to read on.
+
+# Hugo - the world's fastest static site generator
+
+Static site generators (SSGs) are used to build html files from a set of styling templates and content files. They're called static because the pages, once created and deployed to the server, are delivered to the browser without modification. This is in contrast to dynamic websites, where pages are built and modified server-side in response to user inputs. While today most complex websites rely on server-side data storage and processing, there are many good reasons to build smaller projects like a personal website in a static framework. Quicker response times, better maintainability and fewer security concerns are just some of them.
+
+For my personal website, I chose the [Hugo](https://gohugo.io/) static site generator. The reasons for choosing Hugo over other frameworks were:
+
+- **Speed:** Website building in Hugo is breezingly fast, which allows you to quickly explore different design decisions without interrupting your development flow.
+- **Flexibility:** Hugo offers a large variety of [themes](https://themes.gohugo.io/) that help you create a beautiful website in no time. On the other hand, Hugo has powerful features to modify existing themes or build unique websites entirely from scratch.
+- **Integration with RStudio:** Hugo integrates very well with R and RStudio via the [blogdown](https://bookdown.org/yihui/blogdown/) R-package. This unlocks a number of really great features such as R Markdown support or instant page previews in the IDE.
+
+# Hugo project structure
+
+A typical Hugo project consists of a **config file** and a number of **directories** with specific contents. 
+
+```{bash, eval = F}
+.
+├── archetypes
+│   ├── post.md
+│   └── project.md
+├── config.toml
+├── content
+│   ├── about
+│   ├── datenschutzerklärung
+│   ├── impressum
+│   ├── post
+│   └── projects
+├── layouts
+│   ├── _default
+│   ├── partials
+│   ├── project
+│   ├── shortcodes
+│   └── top
+├── public
+├── resources
+│   └── _gen
+├── static
+│   ├── css
+│   ├── img
+│   └── js
+├── themes
+│   └── hugo-theme-cleanwhite
+└── website_blogdown.Rproj
+```
+*<center>Structure of the Hugo project for this website.</center>*
+
+The **config file** stores general settings about your website, e.g. your name, the URL of your site, markup configurations or build options. If you are using a theme, additional theme-specific settings may be available. For example, the theme I'm using (Zhao Huabing's [CleanWhite](https://github.com/zhaohuabing/hugo-theme-cleanwhite) theme) has custom parameters for social media profiles that will conveniently add the corresponding icon and link to the site. A single config file specified in YAML, TOML or JSON format should be sufficient for a typical website, but you can organize multiple configs for different environments in a dedicated `config/` directory if necessary. This feature is useful when your website has several localized versions or your are using different staging and production environments.
+
+While on the subject of **directories**: each directory in a Hugo project has a specific purpose. Let's quickly go over the most important ones. The `content/` directory is where you store the markdown files for all the pages of your website. This is where your blog posts, portfolio pages and about sections live. Note that the structure of `content/` is important: Hugo will (1) consider each top-level folder a separate content type and (2) model the website hierarchy after the folder structure in this directory. That means, if you have a top-level folder `projects/` with two sub folders `professional/` and `fun/`, the corresponding content pages will be created under `mydomain.io/projects/professional` and `mydomain.io/projects/fun`, respectively.
+
+Under `archetypes/` you can specify different front matter for different content types. You can think of front matter as a config for a specific piece of markdown content (again specified in YAML, TOML or JSON format), only that it is not a separate file but included as a header in the markdown file. In the `layout/` directory, you can write html templates to control how content is displayed. By default, there is a template for single pages and one for list pages but you can write custom layouts for different parts of your website, including content types or repeating elements such as header or footer. The `static/` directory contains files that are served without modification by a template. Images, JavaScript files, and CSS style sheets belong here. 
+
+Finally, there is the `themes/` directory. This one is a bit special, as the themes you put there come with their own archetypes, layouts and static files, essentially mirroring the structure of your own projects. This is by design. Hugo has a specific [lookup order](https://gohugo.io/templates/lookup-order/) when assembling the templates to build your site, and it will generally give the files in your project directory precedence over those in a theme folder. That means you can set up a nicely styled website within minutes but have the ability to customize every piece of HTML, CSS, JavaScript by simply placing a modified version of the template file in the corresponding part of you project directory. Great!
+
+# Hugo Functions and variables
+
+Now we've seen how Hugo and its project structure are designed to make theming and templating easy, but one essential part is still missing. After all, templates need to be filled with useful information somehow. This is where Hugo [**variables and functions**](https://gohugo.io/templates/introduction/) come into play. Hugo gives you access to both user-defined and built-in variables that are context aware, i.e. apply to the entire site, to a specific page or to other parts of the project (e.g. git, files, taxonomy etc.). Combine those with the multitude of functions for control flow, data manipulation and so on, wrap it in double curly brackets and you have a very powerful framework for building dynamic templates for static web content. In fact, this framework is not original to Hugo but a package in the Go standard library known as [Go templates](https://pkg.go.dev/text/template). Below it is in action. I use the Hugo `range` function in combination with some filtering and sorting to build bootstrap cards from the front matter of my project pages. 
+
+```{html, eval = F}
+<div class="card-columns position-relative">                          <!-- New div with custom bootstrap class (not included in theme)
+   {{range where $.Site.RegularPages.ByWeight "Section" "projects" }} <!-- use range function to loop over regular pages where section equals projects -->
+   <div class="card">
+      <img class="card-img-top" src= {{ .featured_image}}>            <!-- grab link to preview image -->
+      <div class="card-body">
+         <center>
+            <h3 class="card-title">
+            {{ .Title }}</h5>                                         <!-- title -->
+            <p class="card-text">{{ .Description}}</p>                <!-- description -->
+            <a href= {{ .RelPermalink }} class="stretched-link"></a>  <!-- link -->
+         </center>
+      </div>
+   </div>
+   {{ end }}                                                          <!-- end range-->
+</div>
+```
+*<center>Templating in Hugo is really straightforward</center>*
+
+Here's a (non-exhaustive) list of additional changes I made in order to personalize the website:
+
+- Made new header images from pictures I took around the world
+- Created a new content type for projects and adjusted templates for single pages (no sidebar, different header) and list pages (display projects as Bootstrap cards)
+- Trimmed down the sidebar, changed the colors of tags
+- Made the content column narrower and increased the font size
+- Removed dynamic behavior of the Navbar, where new tabs would be added for common tags
+- Imported a custom font from Google Fonts (Zen Kaku Gothic Antique)
+
+# (R-)Markdown for easy content creation
+
+The most important part of every website is, of course, its content. Content files in Hugo are written in markdown, which is a game changer when it comes to effective text production while having full control over text formatting. The core idea behind markdown is to use a small set of simple markups, i.e. in-text formatting instructions, to convert human-readable source text into html. No painful point-and-click styling of text snippets, no hours spent on stack overflow to layout a figure (I'm looking at you, LaTeX!), and no distractive indentations and tags around the actual text content. Markdown just works. If you've ever used github, wrote a documentation or prepared an automated report, chances are you've come across markdown already. For those who haven't, here is a short [cheat sheet](https://www.markdownguide.org/cheat-sheet/) of the basics.
+
+Hugo uses a fairly standard *flavor* of markdown, which is fine in many use cases. However, having enjoyed the features of the R-markdown ecosystem for years, I was very happy to learn that the [blogdown](https://bookdown.org/yihui/blogdown/) R-package brings R-markdown to Hugo. **That allows for the execution code blocks -- not just R but also Python, SQL, bash and more -- directly in the markdown file.** Other advanced features such as mathematical notation or embedded html widgets are exclusive to R-markdown as well. Overall, blogdown integrates very well with RStudio and really helps with the creation of content. Besides the benefits of R-markdown, the package also provides a number of utility functions to create new files, insert content, or preview and build the website.
+
+# Conclusion
+
+**With a basic understanding of the above concepts - Hugo project structure, templating and markdown - it was straightforward to build a modern, personalized website**. Time to share it with with the world. This will be the topic of the next post in this series. I'll talk about different options to deploy a website and the reasons why I eventually decided to venture into self-hosting instead of using a free option such as GitHub pages or Netlify.
+
+# Further readings
+
+- [Official Hugo Documentation](https://gohugo.io/documentation/) including a series of very accessible Youtube tutorials
+- [E-Book about the blogdown R-package](https://bookdown.org/yihui/blogdown/)
+- [CSS tutorial](https://www.w3schools.com/css/) for effective styling and theming

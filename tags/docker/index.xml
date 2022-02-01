@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>That escalated quickly: from building a personal website to running a dockerized virtual private server (part 1)</title>
-      <link>https://chrkoenig.io/post/2021-11-15-self-hosting/</link>
+      <link>https://chrkoenig.io/post/2022-02-01-building_a_personal_website_with_hugo/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://chrkoenig.io/post/2021-11-15-self-hosting/</guid>
+      <guid>https://chrkoenig.io/post/2022-02-01-building_a_personal_website_with_hugo/</guid>
       <description>This is part one of a three-part blog series. The other posts will be linked here in the future.
  Building a static website with Hugo Going live: domains and options for web hosting Dockerizing your website and other services on a virtual private server   Why a website? For a few months now, the first post &amp;ldquo;Hello, world!&amp;quot; has been sitting lonely on the front page of this blog.</description>
     </item>
