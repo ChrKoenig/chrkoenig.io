@@ -8,6 +8,7 @@ subtitle: ''
 description: 'I am currently building a Shiny application that converts tabular ecological field data into a well-defined exchange format in XML. Part of the UI consists of an input form, where users can map columns of their uploaded data to specific elements of the exchange format. The challenge is that [...]'
 image: "/img/post_banners/DSC_2495.JPG"
 thumbnail: "/img/twitter_preview.png"
+headerstyle: text-warning
 draft: false
 ---
 
