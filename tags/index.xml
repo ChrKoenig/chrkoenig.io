@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dashboards</title>
+      <link>https://chrkoenig.io/tags/dashboards/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/tags/dashboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://chrkoenig.io/tags/r/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-Shiny</title>
+      <link>https://chrkoenig.io/tags/r-shiny/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/tags/r-shiny/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Blogdown</title>
       <link>https://chrkoenig.io/tags/blogdown/</link>
@@ -107,15 +134,6 @@
     </item>
     
     <item>
-      <title>Dashboards</title>
-      <link>https://chrkoenig.io/tags/dashboards/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrkoenig.io/tags/dashboards/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data integration</title>
       <link>https://chrkoenig.io/tags/data-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -211,15 +229,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrkoenig.io/tags/mcmc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R-Shiny</title>
-      <link>https://chrkoenig.io/tags/r-shiny/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrkoenig.io/tags/r-shiny/</guid>
       <description></description>
     </item>
     

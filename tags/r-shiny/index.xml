@@ -5,7 +5,8 @@
     <link>https://chrkoenig.io/tags/r-shiny/</link>
     <description>Recent content in R-Shiny on Christian König</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://chrkoenig.io/tags/r-shiny/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chrkoenig.io/tags/r-shiny/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web applications with R-Shiny</title>
       <link>https://chrkoenig.io/projects/r-shiny/</link>
@@ -14,6 +15,15 @@
       <guid>https://chrkoenig.io/projects/r-shiny/</guid>
       <description>Web applications with R-Shiny Shiny allows building interactive web applications from R while having access to all the tools that set the language apart, i.e. advanced data processing, modeling and visualization capabilities and thousands of user-contributed packages.
 During my postdoc, I was part of the ODMAP project to promote better documentation and reporting of biodiversity models. ODMAP stands for Overview, Data, Model, Assessment and Prediction and provides a step-by-step protocol to ensure a reproducible modeling workflow.</description>
+    </item>
+    
+    <item>
+      <title>Using Shiny modules to build reusable UI components</title>
+      <link>https://chrkoenig.io/post/2022-06-06-using-shiny-modules-to-build-dynamic-user-interfaces/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrkoenig.io/post/2022-06-06-using-shiny-modules-to-build-dynamic-user-interfaces/</guid>
+      <description>Background I am currently building a Shiny application that converts tabular ecological field data into a well-defined exchange format in XML. Part of the UI consists of an input form, where users can map columns of their uploaded data to specific elements of the exchange format. The challenge is that the number of mappings &amp;ndash; and thus the number of required input fields &amp;ndash; depends on the user data. Ideally, users would be able to dynamically add and remove UI elements, while the server collects all valid input values from the UI.</description>
     </item>
     
   </channel>

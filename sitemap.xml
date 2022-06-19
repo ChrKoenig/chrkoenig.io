@@ -19,12 +19,42 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.io/tags/blogdown/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
+    <loc>https://chrkoenig.io/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrkoenig.io/</loc>
+    <loc>https://chrkoenig.io/tags/dashboards/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/post/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/tags/r/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/tags/r-shiny/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/tags/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/post/2022-06-06-using-shiny-modules-to-build-dynamic-user-interfaces/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrkoenig.io/tags/blogdown/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -44,22 +74,12 @@
   </url>
   
   <url>
-    <loc>https://chrkoenig.io/post/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://chrkoenig.io/tags/self-hosting/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://chrkoenig.io/tags/sysadmin/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.io/tags/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -105,10 +125,6 @@
   
   <url>
     <loc>https://chrkoenig.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.io/tags/dashboards/</loc>
   </url>
   
   <url>
@@ -165,10 +181,6 @@
   
   <url>
     <loc>https://chrkoenig.io/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrkoenig.io/tags/r-shiny/</loc>
   </url>
   
   <url>
