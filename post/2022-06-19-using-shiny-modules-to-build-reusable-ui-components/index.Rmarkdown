@@ -148,7 +148,7 @@ and output the rendered `data.frame` in the main UI.
 tableOutput("user_inputs") # UI code
 ```
 
-That's it - adding and removing UI elements with Shiny modules is that simple. 
+That's it - adding and removing UI elements with Shiny modules is that simple!
 
 # Summary
 
