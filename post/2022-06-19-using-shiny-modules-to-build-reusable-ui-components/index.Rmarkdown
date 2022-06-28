@@ -17,7 +17,7 @@ draft: false
 I am currently building a Shiny application that converts tabular ecological field data into a well-defined exchange format in XML. Part of the UI consists of an input form, where users can map columns of their uploaded data to specific elements of the exchange format. The challenge is that the number of mappings -- and thus the number of required input fields -- depends on the user data. Ideally, users would be able to dynamically add and remove UI elements, while the server collects all valid input values from the UI. While working on that problem it occurred to me that this functionality might be quite useful in a number of circumstances (this [open issue](https://github.com/rstudio/shiny-examples/issues/172) on GitHub confirmed my intuition), so I decided to write a blog post about it. 
 
 # An example app 
-The key idea is to use a [Shiny module](https://shiny.rstudio.com/articles/modules.html) to UI components and collect the input values in a reactive `data.frame`. I'll demonstrate the approach using a simple movie-themed app, where users can enter the title, director and release year of their favorite movies. Here's a quick preview of it.
+The key idea is to use a [Shiny module](https://shiny.rstudio.com/articles/modules.html) to create UI components and collect the input values in a reactive `data.frame`. I'll demonstrate the approach using a simple movie-themed app, where users can enter the title, director and release year of their favorite movies. Here's a quick preview of it.
 
 <iframe width="720" height="480" src="videos/example_app.mp4" align="middle" frameborder="0" allowfullscreen></iframe>
 
